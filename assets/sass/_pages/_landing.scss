@@ -1,0 +1,68 @@
+@use "../_partials/mixins";
+.intro-content {
+  --max-width: 1312px;
+  --padding: 1rem;
+  width: min(var(--max-width), 100%);
+  margin-inline: auto;
+}
+
+.services-list-grid {
+  .grid-row-1 {
+    // display: flex;
+    // flex-wrap: wrap;
+
+    .fs-section-headline {
+      // max-width: 200px;
+    }
+    .services-list {
+      // display: flex;
+    }
+  }
+
+  .grid-row-2 {
+  }
+}
+
+#reviews{
+  .sub-heading{
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+ul[data-type="sponsors"]{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  li{
+    max-width: 150px;
+  }
+  @include mixins.minmq(50em) {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+
+@include mixins.minmq(50em) {
+  .services-list-grid {
+    .grid-row-1 {
+      display: flex;
+      flex-wrap: wrap;
+
+      .fs-section-headline {
+        max-width: 200px;
+      }
+      .services-list {
+        display: flex;
+      }
+    }
+
+    .grid-row-2 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
