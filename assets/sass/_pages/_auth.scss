@@ -8,13 +8,14 @@ input[type="password"],
 input[type="number"],
 input[type="email"],
 input[type="search"],
-select{
-  &.form-control, &.form-select {
+select {
+  &.form-control,
+  &.form-select {
     border: 1px solid var(--clr-accent-50);
     height: 45px;
     border-radius: 5px;
     &:focus {
-        background-color: unset;
+      background-color: unset;
       outline: 0;
       box-shadow: none;
       border: 1px solid var(--clr-primary-500);
@@ -26,8 +27,7 @@ button {
   height: 45px;
 }
 
-
-.login-card{
-    max-width: 500px;
-    margin: 0 auto;
+.login-card {
+  max-width: 500px;
+  margin: 0 auto;
 }
